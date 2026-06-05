@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Iztrzl Portfolio</title>
+<meta charset="UTF-8">
+<title>Iztrzl Portfolio</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #eef2f3;
-      color: #333;
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef2f3;
+    color: #333;
+  }
 
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 40px;
-    }
+  .container {
+    max-width: 950px;
+    margin: auto;
+    padding: 40px;
+  }
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
 
-    h1 {
-      margin-bottom: 5px;
-      font-size: 34px;
-    }
+  h1 {
+    margin-bottom: 5px;
+    font-size: 34px;
+  }
 
-    .role {
-      color: #666;
-      margin-top: 0;
-      font-size: 16px;
-    }
+  .role {
+    color: #666;
+    margin-top: 0;
+    font-size: 16px;
+  }
 
-    h2 {
-      border-left: 5px solid #3498db;
-      padding-left: 10px;
-      margin-bottom: 15px;
-    }
+  h2 {
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
 
-    h3 {
-      margin-bottom: 5px;
-      color: #2c3e50;
-    }
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+  }
 
-    ul {
-      line-height: 1.8;
-    }
+  .btn:hover {
+    background: #217dbb;
+  }
 
-    .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      margin-right: 10px;
-      background: #3498db;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
+  .btn-secondary {
+    background: #1f2937;
+  }
 
-    .btn:hover {
-      background: #217dbb;
-    }
+  .btn-secondary:hover {
+    background: #111827;
+  }
 
-    .tag {
-      display: inline-block;
-      background: #eaf2f8;
-      color: #2c3e50;
-      padding: 5px 10px;
-      margin: 5px 5px 0 0;
-      border-radius: 5px;
-      font-size: 12px;
-    }
+  .tag {
+    display: inline-block;
+    background: #eaf2f8;
+    color: #2c3e50;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 5px;
+    font-size: 12px;
+  }
 
-  </style>
+  .footer {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+</style>
 </head>
 
 <body>
@@ -86,15 +93,21 @@
   <!-- HERO -->
   <div class="card">
     <h1>Iztrzl</h1>
-    <p class="role">NOC Engineer / Linux / IT Support </p>
+    <p class="role">NOC Engineer / Linux / IT Support</p>
 
     <p>
       IT infrastructure-focused professional specializing in Linux systems,
       monitoring, troubleshooting, automation, and operational support.
     </p>
 
+    <!-- CTA BUTTONS -->
     <a class="btn" href="https://github.com/iztrzl" target="_blank">GitHub</a>
     <a class="btn" href="https://www.linkedin.com/in/izzati-razali/" target="_blank">LinkedIn</a>
+
+    <!-- RESUME BUTTON (IMPORTANT) -->
+    <a class="btn btn-secondary" href="resume.pdf" download>
+      📄 Download Resume
+    </a>
   </div>
 
   <!-- ABOUT -->
@@ -104,8 +117,6 @@
       I am a NOC Engineer with hands-on experience in Linux-based infrastructure,
       system monitoring, and incident management. I specialize in troubleshooting
       production issues, ensuring system uptime, and supporting operational stability.
-      I am currently expanding into solution engineering and system analyst roles
-      with a focus on automation and process improvement.
     </p>
   </div>
 
@@ -113,30 +124,22 @@
   <div class="card">
     <h2>Skills</h2>
 
-    <h3>Linux & Infrastructure</h3>
-    <span class="tag">Linux OS</span>
+    <span class="tag">Linux</span>
     <span class="tag">SSH</span>
     <span class="tag">systemctl</span>
-    <span class="tag">Log Analysis</span>
-    <span class="tag">Networking Basics</span>
-
-    <h3>Monitoring Tools</h3>
     <span class="tag">Nagios</span>
     <span class="tag">Zabbix</span>
-
-    <h3>Automation</h3>
     <span class="tag">Excel VBA</span>
-    <span class="tag">Basic Scripting</span>
   </div>
 
   <!-- EXPERIENCE -->
   <div class="card">
     <h2>Experience Focus</h2>
     <ul>
-      <li>Monitoring server performance and system health in production environments</li>
-      <li>Handling incidents such as service downtime, CPU spikes, Disk full and network issues</li>
-      <li>Performing root cause analysis (RCA) using system logs and troubleshooting tools</li>
-      <li>Supporting escalation cases and ensuring service availability</li>
+      <li>Monitoring production systems & uptime</li>
+      <li>Handling incidents (downtime, CPU spikes, disk full)</li>
+      <li>Root Cause Analysis (RCA)</li>
+      <li>Escalation support in production environment</li>
     </ul>
   </div>
 
@@ -144,10 +147,10 @@
   <div class="card">
     <h2>Documentation & Process Work</h2>
     <ul>
-      <li>Prepared technical documentation for system processes and troubleshooting procedures</li>
-      <li>Created proposal documents for infrastructure improvements and system enhancements</li>
-      <li>Handled renewal documentation for IT services and system support contracts</li>
-      <li>Assisted in audit documentation by maintaining accurate system records and compliance evidence</li>
+      <li>Technical SOP documentation</li>
+      <li>Infrastructure proposal documents</li>
+      <li>Renewal documentation for IT services</li>
+      <li>Audit compliance support</li>
     </ul>
   </div>
 
@@ -155,23 +158,14 @@
   <div class="card">
     <h2>Projects</h2>
 
-    <h3>Linux Server Monitoring & Incident Handling</h3>
-    <p>
-      Monitored server health using Nagios, Uptime Robot, Redhat, Zabbix, managed alerts, and handled system incidents
-      including downtime, performance issues, and service failures in production environment.
-    </p>
+    <h3>Linux Monitoring System</h3>
+    <p>Handled server monitoring using Nagios / Zabbix in production environment.</p>
 
-    <h3>Root Cause Analysis (RCA)</h3>
-    <p>
-      Investigated system failures by analyzing logs, identifying root causes,
-      and documenting resolution steps for future prevention and knowledge sharing.
-    </p>
+    <h3>Root Cause Analysis</h3>
+    <p>Performed log analysis and troubleshooting for system failures.</p>
 
     <h3>Excel VBA Automation</h3>
-    <p>
-      Developed automation scripts in Excel VBA to reduce manual reporting workload
-      and improve operational efficiency and reporting accuracy.
-    </p>
+    <p>Automated reporting to reduce manual workload and improve efficiency.</p>
   </div>
 
   <!-- CONTACT -->
@@ -181,8 +175,7 @@
     <p>LinkedIn: linkedin.com/in/izzati-razali</p>
   </div>
 
- </div>
-
+  <!-- FOOTER -->
   <div class="footer">
     © 2026 Iztrzl Portfolio | Built with GitHub Pages
   </div>
